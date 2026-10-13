@@ -1,3 +1,21 @@
+> **TrustLab independent copy.** Original source, authorship, licenses and Git history are preserved from [Messi-Q/MuFuzz](https://github.com/Messi-Q/MuFuzz).
+
+## Download the original executable
+
+The GitHub importer copied the Git LFS pointer for `fuzz`, but did not transfer LFS storage. Download the unchanged original executable from [Releases](https://github.com/trustlab-zjsu/MuFuzz/releases/tag/imported-artifacts-2026-10-13) after cloning:
+
+```bash
+GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/trustlab-zjsu/MuFuzz.git
+cd MuFuzz
+curl -fL https://github.com/trustlab-zjsu/MuFuzz/releases/download/imported-artifacts-2026-10-13/fuzz -o fuzz
+echo '851db2843646020d2b5ce971f90f78d32796d4d42036b84c0f64f86e14eb33da  fuzz' | sha256sum --check
+chmod +x fuzz
+```
+
+Continue with the original dependencies and usage instructions below. This executable is copied unchanged; it has not been rebuilt or independently tested by TrustLab.
+
+---
+
 # MuFuzz
 
 MuFuzz: Sequence-Aware Mutation and Seed Mask Guidance for Blockchain Smart Contract Fuzzing
